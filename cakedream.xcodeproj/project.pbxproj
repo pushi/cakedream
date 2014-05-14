@@ -22,6 +22,21 @@
 		591C42101921BA6F00189201 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591C41F41921BA6F00189201 /* CoreData.framework */; };
 		591C42181921BA6F00189201 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 591C42161921BA6F00189201 /* InfoPlist.strings */; };
 		591C421A1921BA6F00189201 /* cakedreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42191921BA6F00189201 /* cakedreamTests.m */; };
+		591C42251921BE0300189201 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42241921BE0300189201 /* HomeViewController.m */; };
+		591C42291921BF3800189201 /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42281921BF3800189201 /* MLNavigationController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		591C42331921E71200189201 /* DataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42321921E71200189201 /* DataStructure.m */; };
+		591C42361921F17700189201 /* NetWorkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42351921F17700189201 /* NetWorkRequest.m */; };
+		591C42391921F77D00189201 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42381921F77D00189201 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		591C423C1921FC8500189201 /* RSAEncryptAndDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C423B1921FC8500189201 /* RSAEncryptAndDecrypt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		591C4241192202AD00189201 /* SuperTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C423E192202AD00189201 /* SuperTableViewController.m */; };
+		591C4242192202AD00189201 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C4240192202AD00189201 /* SuperViewController.m */; };
+		591C4245192202E600189201 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C4244192202E600189201 /* MBProgressHUD.m */; };
+		591C42481922033A00189201 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C42471922033A00189201 /* SectionHeaderView.m */; };
+		591C424D1922047B00189201 /* 启动界面底图.png in Resources */ = {isa = PBXBuildFile; fileRef = 591C424A1922047B00189201 /* 启动界面底图.png */; };
+		591C424E1922047B00189201 /* 标题.png in Resources */ = {isa = PBXBuildFile; fileRef = 591C424B1922047B00189201 /* 标题.png */; };
+		591C424F1922047B00189201 /* 标题@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591C424C1922047B00189201 /* 标题@2x.png */; };
+		591C4253192204EE00189201 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C4252192204EE00189201 /* TestViewController.m */; };
+		591C425519220EF100189201 /* 9.2.json in Resources */ = {isa = PBXBuildFile; fileRef = 591C425419220EF100189201 /* 9.2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +68,32 @@
 		591C42151921BA6F00189201 /* cakedreamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cakedreamTests-Info.plist"; sourceTree = "<group>"; };
 		591C42171921BA6F00189201 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		591C42191921BA6F00189201 /* cakedreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cakedreamTests.m; sourceTree = "<group>"; };
+		591C42231921BE0300189201 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		591C42241921BE0300189201 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		591C42271921BF3800189201 /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
+		591C42281921BF3800189201 /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
+		591C42311921E71200189201 /* DataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
+		591C42321921E71200189201 /* DataStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructure.m; sourceTree = "<group>"; };
+		591C42341921F17700189201 /* NetWorkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequest.h; sourceTree = "<group>"; };
+		591C42351921F17700189201 /* NetWorkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequest.m; sourceTree = "<group>"; };
+		591C42371921F77D00189201 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		591C42381921F77D00189201 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		591C423A1921FC8500189201 /* RSAEncryptAndDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptAndDecrypt.h; sourceTree = "<group>"; };
+		591C423B1921FC8500189201 /* RSAEncryptAndDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptAndDecrypt.m; sourceTree = "<group>"; };
+		591C423D192202AD00189201 /* SuperTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperTableViewController.h; sourceTree = "<group>"; };
+		591C423E192202AD00189201 /* SuperTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperTableViewController.m; sourceTree = "<group>"; };
+		591C423F192202AD00189201 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		591C4240192202AD00189201 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		591C4243192202E600189201 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		591C4244192202E600189201 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		591C42461922033A00189201 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		591C42471922033A00189201 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		591C424A1922047B00189201 /* 启动界面底图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动界面底图.png"; sourceTree = "<group>"; };
+		591C424B1922047B00189201 /* 标题.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标题.png"; sourceTree = "<group>"; };
+		591C424C1922047B00189201 /* 标题@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标题@2x.png"; sourceTree = "<group>"; };
+		591C4251192204EE00189201 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		591C4252192204EE00189201 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		591C425419220EF100189201 /* 9.2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 9.2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +156,17 @@
 		591C41F61921BA6F00189201 /* cakedream */ = {
 			isa = PBXGroup;
 			children = (
+				591C4250192204C900189201 /* UI */,
+				591C42491922047B00189201 /* Resource */,
+				591C42301921E6AD00189201 /* Net */,
+				591C42261921BEA700189201 /* Widgets */,
 				591C41FF1921BA6F00189201 /* AppDelegate.h */,
 				591C42001921BA6F00189201 /* AppDelegate.m */,
 				591C42051921BA6F00189201 /* Images.xcassets */,
 				591C42021921BA6F00189201 /* cakedream.xcdatamodeld */,
 				591C41F71921BA6F00189201 /* Supporting Files */,
+				591C42231921BE0300189201 /* HomeViewController.h */,
+				591C42241921BE0300189201 /* HomeViewController.m */,
 			);
 			path = cakedream;
 			sourceTree = "<group>";
@@ -151,6 +198,58 @@
 				591C42161921BA6F00189201 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		591C42261921BEA700189201 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				591C42461922033A00189201 /* SectionHeaderView.h */,
+				591C42471922033A00189201 /* SectionHeaderView.m */,
+				591C4243192202E600189201 /* MBProgressHUD.h */,
+				591C4244192202E600189201 /* MBProgressHUD.m */,
+				591C423D192202AD00189201 /* SuperTableViewController.h */,
+				591C423E192202AD00189201 /* SuperTableViewController.m */,
+				591C423F192202AD00189201 /* SuperViewController.h */,
+				591C4240192202AD00189201 /* SuperViewController.m */,
+				591C423A1921FC8500189201 /* RSAEncryptAndDecrypt.h */,
+				591C423B1921FC8500189201 /* RSAEncryptAndDecrypt.m */,
+				591C42371921F77D00189201 /* OpenUDID.h */,
+				591C42381921F77D00189201 /* OpenUDID.m */,
+				591C42271921BF3800189201 /* MLNavigationController.h */,
+				591C42281921BF3800189201 /* MLNavigationController.m */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		591C42301921E6AD00189201 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				591C42311921E71200189201 /* DataStructure.h */,
+				591C42321921E71200189201 /* DataStructure.m */,
+				591C42341921F17700189201 /* NetWorkRequest.h */,
+				591C42351921F17700189201 /* NetWorkRequest.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		591C42491922047B00189201 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				591C425419220EF100189201 /* 9.2.json */,
+				591C424A1922047B00189201 /* 启动界面底图.png */,
+				591C424B1922047B00189201 /* 标题.png */,
+				591C424C1922047B00189201 /* 标题@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		591C4250192204C900189201 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				591C4251192204EE00189201 /* TestViewController.h */,
+				591C4252192204EE00189201 /* TestViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +327,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				591C424E1922047B00189201 /* 标题.png in Resources */,
 				591C41FB1921BA6F00189201 /* InfoPlist.strings in Resources */,
+				591C424D1922047B00189201 /* 启动界面底图.png in Resources */,
+				591C425519220EF100189201 /* 9.2.json in Resources */,
 				591C42061921BA6F00189201 /* Images.xcassets in Resources */,
+				591C424F1922047B00189201 /* 标题@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +351,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				591C4242192202AD00189201 /* SuperViewController.m in Sources */,
 				591C42041921BA6F00189201 /* cakedream.xcdatamodeld in Sources */,
+				591C4253192204EE00189201 /* TestViewController.m in Sources */,
+				591C42331921E71200189201 /* DataStructure.m in Sources */,
+				591C42481922033A00189201 /* SectionHeaderView.m in Sources */,
 				591C42011921BA6F00189201 /* AppDelegate.m in Sources */,
+				591C4241192202AD00189201 /* SuperTableViewController.m in Sources */,
+				591C42291921BF3800189201 /* MLNavigationController.m in Sources */,
 				591C41FD1921BA6F00189201 /* main.m in Sources */,
+				591C4245192202E600189201 /* MBProgressHUD.m in Sources */,
+				591C42391921F77D00189201 /* OpenUDID.m in Sources */,
+				591C423C1921FC8500189201 /* RSAEncryptAndDecrypt.m in Sources */,
+				591C42361921F17700189201 /* NetWorkRequest.m in Sources */,
+				591C42251921BE0300189201 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +484,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cakedream/cakedream-Prefix.pch";
 				INFOPLIST_FILE = "cakedream/cakedream-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -383,6 +498,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cakedream/cakedream-Prefix.pch";
 				INFOPLIST_FILE = "cakedream/cakedream-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,6 +563,7 @@
 				591C421F1921BA6F00189201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		591C42201921BA6F00189201 /* Build configuration list for PBXNativeTarget "cakedreamTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +572,7 @@
 				591C42221921BA6F00189201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -15,3 +15,30 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
 #endif
+//debug 输出
+#define DEBUG_MODE
+#ifdef DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... )
+#endif
+//常用宏定义
+#define IPHONE5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,1136), [[UIScreen mainScreen] currentMode].size) : NO)//判断是否为iphone5
+#define SCREEN_INCREMENT (IPHONE5?88:0)
+//判断 IOS 版本！
+#define IOS7  (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)? YES:NO)
+#define VIEWFRAME_INCREMENT (IOS7?64:0)
+#define STATUS_INCREMENT (IOS7?20:0)
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//用户设置相关
+#define SAVE_HISTORY_RECORD     @"bool.saveHistoryRecord" //是否保存历史查询纪录
+#define CURRENT_USER            @"string.currentuser"//当前用户
+#define OPENUDID                @"string.openudid" //openudid
+#define AUTO_LOGIN              @"bool.autoLogin"//是否自动登录
+#define SHOW_DISCLAIMER         @"bool.bShowDisclaimer"//是否在启动时显示免责声明
+#define SHOW_GUIDEVIEW          @"bool.bShowGuideView"//是否在启动时显示引导页
+#define CURRENT_VERSION         @"string.currentVersion"//当前软件版本
+#define SKIN_THEME              @"SkinTheme"//皮肤主题
+

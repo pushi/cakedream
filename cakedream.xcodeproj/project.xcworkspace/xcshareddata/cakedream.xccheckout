@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>00D94B7D-8C5E-4359-A36A-E2C91EF2DC64</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cakedream</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>43511057-24C5-4703-8C12-7E9E512E7C26</key>
+		<string>https://github.com/pushi/cakedream.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cakedream.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>43511057-24C5-4703-8C12-7E9E512E7C26</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pushi/cakedream.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>43511057-24C5-4703-8C12-7E9E512E7C26</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>43511057-24C5-4703-8C12-7E9E512E7C26</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cakedream</string>
+		</dict>
+	</array>
+</dict>
+</plist>

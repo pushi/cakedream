@@ -7,19 +7,62 @@
 //
 
 #import "AppDelegate.h"
-
+#import "OpenUDID.h"
+#import "NetWorkRequest.h"
 @implementation AppDelegate
-
+@synthesize HomeVC=_HomeVC;
+@synthesize navigation;
+@synthesize attachString;
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /*
+     添加检测是否首次使用
+     */
+    NSUserDefaults* userpreference=[NSUserDefaults standardUserDefaults];
+    if ([userpreference stringForKey:OPENUDID]==nil) {
+        //软件第一次使用
+        [userpreference setObject:[OpenUDID value] forKey:OPENUDID];
+        [userpreference setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] forKey:CURRENT_VERSION];
+        [userpreference synchronize];
+    }else{
+        //检测是否是升级版本的第一次使用
+        NSString* currentversion=[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+        NSString* historyversion=[userpreference stringForKey:CURRENT_VERSION];
+        if (![currentversion isEqualToString:historyversion]) {
+            [userpreference setObject:currentversion forKey:CURRENT_VERSION]; //更新版本号
+            //更新版本添加配置
+        }
+        [userpreference synchronize];
+    }
+
+    /*
+     添加网络请求附加字符串
+     */
+    self.attachString=[NSString stringWithFormat:@"devType=%@&devNumber=%@&version=%@",devType,[userpreference stringForKey:OPENUDID],[userpreference stringForKey:CURRENT_VERSION]];
+    /*
+     添加检测网络，检测更新等选项
+     */
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [NetWorkRequest getServerKey];
+    });
+    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor clearColor];
+    _HomeVC=[[HomeViewController alloc]init];
+    navigation=[[MLNavigationController alloc]initWithRootViewController:_HomeVC];
+    self.window.rootViewController=navigation;
+    [navigation setNavigationBarHidden:YES animated:NO];
     [self.window makeKeyAndVisible];
+    [navigation.navigationBar setBackgroundImage:[UIImage imageNamed:@"标题"] forBarMetrics:UIBarMetricsDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    navigation.navigationBar.translucent=NO;
+
     return YES;
 }
 

@@ -90,7 +90,6 @@
     } else{
     cell.textLabel.text=[NSString stringWithFormat:@"row=%d section=%d",indexPath.row,indexPath.section];
     }
-    CellChangeSelectedColor;
     return cell;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
