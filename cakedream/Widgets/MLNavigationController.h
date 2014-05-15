@@ -15,4 +15,7 @@
 @property (nonatomic,strong) UIButton* backButton;
 @property (nonatomic,strong) UILabel* backLabel;
 @property (nonatomic,strong) UILabel* titleLabel;
+
+- (void)showMenu;
+-(void)pop;
 @end

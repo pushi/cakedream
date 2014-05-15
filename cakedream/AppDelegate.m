@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "OpenUDID.h"
 #import "NetWorkRequest.h"
+#import "DEMOMenuViewController.h"
+#import "REFrostedViewController.h"
+
 @implementation AppDelegate
 @synthesize HomeVC=_HomeVC;
 @synthesize navigation;
@@ -56,12 +59,18 @@
     self.window.backgroundColor = [UIColor clearColor];
     _HomeVC=[[HomeViewController alloc]init];
     navigation=[[MLNavigationController alloc]initWithRootViewController:_HomeVC];
-    self.window.rootViewController=navigation;
-    [navigation setNavigationBarHidden:YES animated:NO];
-    [self.window makeKeyAndVisible];
-    [navigation.navigationBar setBackgroundImage:[UIImage imageNamed:@"标题"] forBarMetrics:UIBarMetricsDefault];
+      [navigation.navigationBar setBackgroundImage:[UIImage imageNamed:@"标题"] forBarMetrics:UIBarMetricsDefault];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     navigation.navigationBar.translucent=NO;
+    
+    DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigation menuViewController:menuController];
+    frostedViewController.direction = REFrostedViewControllerDirectionLeft;
+    frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+
+    self.window.rootViewController=frostedViewController;
+    //    [navigation setNavigationBarHidden:NO animated:NO];
+    [self.window makeKeyAndVisible];
 
     return YES;
 }

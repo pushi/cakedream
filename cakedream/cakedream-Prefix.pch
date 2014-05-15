@@ -41,4 +41,5 @@
 #define SHOW_GUIDEVIEW          @"bool.bShowGuideView"//是否在启动时显示引导页
 #define CURRENT_VERSION         @"string.currentVersion"//当前软件版本
 #define SKIN_THEME              @"SkinTheme"//皮肤主题
-
+//cell选中背景色
+#define CellChangeSelectedColor cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];cell.selectedBackgroundView.backgroundColor =[UIColor colorWithWhite:0.8f alpha:0.8f]

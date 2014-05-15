@@ -8,8 +8,10 @@
 
 #import "SuperViewController.h"
 #import "MLNavigationController.h"
+#import "HomeViewController.h"
 @interface SuperViewController ()<MBProgressHUDDelegate>{
     UIButton* more;
+    UILabel* backLabel;
 }
 
 @end
@@ -36,21 +38,31 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     UILabel* titlelabel=[(MLNavigationController*)self.navigationController backLabel];
-    titlelabel.alpha=0;
     CGRect f = titlelabel.frame;
-    f.origin.x=100;
+    f.origin.x=10;
     titlelabel.frame=f;
-    [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
-    [UIView setAnimationDuration:0.5f];
-    if (self.navigationController.viewControllers.count==2) {
-        titlelabel.text=@"主页";
-    }else{
-        titlelabel.text=@"返回";
-    } 
-    f.origin.x=0;
-    titlelabel.frame=f;
-    titlelabel.alpha=1.0f;
-    [UIView commitAnimations];
+//    titlelabel.alpha=0;
+//    titlelabel.textAlignment=UITextAlignmentLeft;
+//    CGRect f = titlelabel.frame;
+//    f.origin.x=100;
+//    titlelabel.frame=f;
+//    [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+//    [UIView setAnimationDuration:0.5f];
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame =  CGRectMake(0, 0, 65, 44);
+    backButton.backgroundColor = [UIColor clearColor];
+    [backButton addTarget:(MLNavigationController *)self.navigationController action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *backBarButton = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = backBarButton;
+    
+   
+
+
+//    f.origin.x=0;
+//    titlelabel.frame=f;
+//    titlelabel.alpha=1.0f;
+//    [UIView commitAnimations];
 }
 -(void)showMoreButton{
     more=[[UIButton alloc] initWithFrame:CGRectMake(320-65, 0, 65, 44)];
@@ -74,9 +86,18 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    backLabel=[[UILabel alloc] initWithFrame:CGRectMake(8, 0, 50, 44)];
+    backLabel.text=@"返回";
+    backLabel.textAlignment=UITextAlignmentCenter;
+    backLabel.backgroundColor=[UIColor clearColor];
+    backLabel.textColor=[UIColor whiteColor];
+    backLabel.font=[UIFont boldSystemFontOfSize:14.0f];
+    [self.navigationController.navigationBar addSubview:backLabel];
+
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    [backLabel removeFromSuperview];
     [more removeFromSuperview];
     more=Nil;
 }

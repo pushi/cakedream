@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView*subtableview;
+@property(strong,nonatomic) UILabel* backLabel;
 @end

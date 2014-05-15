@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CakeDetailViewController : UIViewController
+#import "SuperViewController.h"
+@interface CakeDetailViewController : SuperViewController
 
 @end

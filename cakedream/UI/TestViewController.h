@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "SuperViewController.h"
-@interface TestViewController :SuperViewController
+@interface TestViewController :UIViewController
 
 @end

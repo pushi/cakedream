@@ -37,6 +37,18 @@
 		591C424F1922047B00189201 /* 标题@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 591C424C1922047B00189201 /* 标题@2x.png */; };
 		591C4253192204EE00189201 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591C4252192204EE00189201 /* TestViewController.m */; };
 		591C425519220EF100189201 /* 9.2.json in Resources */ = {isa = PBXBuildFile; fileRef = 591C425419220EF100189201 /* 9.2.json */; };
+		592CB0B21924555C00671D72 /* menubackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 592CB0B11924555C00671D72 /* menubackground.jpg */; };
+		5947159A1923027900C180B2 /* CakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715991923027900C180B2 /* CakeDetailViewController.m */; };
+		5947159C19230E4A00C180B2 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 5947159B19230E4A00C180B2 /* line.png */; };
+		594715AA1923464500C180B2 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5947159F1923464500C180B2 /* RECommonFunctions.m */; };
+		594715AB1923464500C180B2 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715A11923464500C180B2 /* REFrostedContainerViewController.m */; };
+		594715AC1923464500C180B2 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715A31923464500C180B2 /* REFrostedViewController.m */; };
+		594715AD1923464500C180B2 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715A51923464500C180B2 /* UIImage+REFrostedViewController.m */; };
+		594715AE1923464500C180B2 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715A71923464500C180B2 /* UIView+REFrostedViewController.m */; };
+		594715AF1923464500C180B2 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715A91923464500C180B2 /* UIViewController+REFrostedViewController.m */; };
+		594715B219234A7D00C180B2 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594715B119234A7D00C180B2 /* DEMOMenuViewController.m */; };
+		5981927A192373C90071DEA2 /* avatar@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59819279192373C90071DEA2 /* avatar@2x.jpg */; };
+		5981927C19237B090071DEA2 /* show1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5981927B19237B090071DEA2 /* show1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +106,26 @@
 		591C4251192204EE00189201 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		591C4252192204EE00189201 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		591C425419220EF100189201 /* 9.2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 9.2.json; sourceTree = "<group>"; };
+		592CB0B11924555C00671D72 /* menubackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menubackground.jpg; sourceTree = "<group>"; };
+		594715981923027900C180B2 /* CakeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeDetailViewController.h; sourceTree = "<group>"; };
+		594715991923027900C180B2 /* CakeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeDetailViewController.m; sourceTree = "<group>"; };
+		5947159B19230E4A00C180B2 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		5947159E1923464500C180B2 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		5947159F1923464500C180B2 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		594715A01923464500C180B2 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		594715A11923464500C180B2 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		594715A21923464500C180B2 /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		594715A31923464500C180B2 /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		594715A41923464500C180B2 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		594715A51923464500C180B2 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		594715A61923464500C180B2 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		594715A71923464500C180B2 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		594715A81923464500C180B2 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		594715A91923464500C180B2 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		594715B019234A7D00C180B2 /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
+		594715B119234A7D00C180B2 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		59819279192373C90071DEA2 /* avatar@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "avatar@2x.jpg"; sourceTree = "<group>"; };
+		5981927B19237B090071DEA2 /* show1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = show1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +235,7 @@
 		591C42261921BEA700189201 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				5947159D1923464500C180B2 /* REFrostedViewController */,
 				591C42461922033A00189201 /* SectionHeaderView.h */,
 				591C42471922033A00189201 /* SectionHeaderView.m */,
 				591C4243192202E600189201 /* MBProgressHUD.h */,
@@ -235,6 +268,10 @@
 		591C42491922047B00189201 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				592CB0B11924555C00671D72 /* menubackground.jpg */,
+				5981927B19237B090071DEA2 /* show1.jpg */,
+				59819279192373C90071DEA2 /* avatar@2x.jpg */,
+				5947159B19230E4A00C180B2 /* line.png */,
 				591C425419220EF100189201 /* 9.2.json */,
 				591C424A1922047B00189201 /* 启动界面底图.png */,
 				591C424B1922047B00189201 /* 标题.png */,
@@ -246,10 +283,33 @@
 		591C4250192204C900189201 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				594715B019234A7D00C180B2 /* DEMOMenuViewController.h */,
+				594715B119234A7D00C180B2 /* DEMOMenuViewController.m */,
 				591C4251192204EE00189201 /* TestViewController.h */,
 				591C4252192204EE00189201 /* TestViewController.m */,
+				594715981923027900C180B2 /* CakeDetailViewController.h */,
+				594715991923027900C180B2 /* CakeDetailViewController.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5947159D1923464500C180B2 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5947159E1923464500C180B2 /* RECommonFunctions.h */,
+				5947159F1923464500C180B2 /* RECommonFunctions.m */,
+				594715A01923464500C180B2 /* REFrostedContainerViewController.h */,
+				594715A11923464500C180B2 /* REFrostedContainerViewController.m */,
+				594715A21923464500C180B2 /* REFrostedViewController.h */,
+				594715A31923464500C180B2 /* REFrostedViewController.m */,
+				594715A41923464500C180B2 /* UIImage+REFrostedViewController.h */,
+				594715A51923464500C180B2 /* UIImage+REFrostedViewController.m */,
+				594715A61923464500C180B2 /* UIView+REFrostedViewController.h */,
+				594715A71923464500C180B2 /* UIView+REFrostedViewController.m */,
+				594715A81923464500C180B2 /* UIViewController+REFrostedViewController.h */,
+				594715A91923464500C180B2 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,10 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				591C424E1922047B00189201 /* 标题.png in Resources */,
+				5981927C19237B090071DEA2 /* show1.jpg in Resources */,
+				5947159C19230E4A00C180B2 /* line.png in Resources */,
 				591C41FB1921BA6F00189201 /* InfoPlist.strings in Resources */,
 				591C424D1922047B00189201 /* 启动界面底图.png in Resources */,
 				591C425519220EF100189201 /* 9.2.json in Resources */,
+				5981927A192373C90071DEA2 /* avatar@2x.jpg in Resources */,
 				591C42061921BA6F00189201 /* Images.xcassets in Resources */,
+				592CB0B21924555C00671D72 /* menubackground.jpg in Resources */,
 				591C424F1922047B00189201 /* 标题@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,19 +415,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594715AB1923464500C180B2 /* REFrostedContainerViewController.m in Sources */,
 				591C4242192202AD00189201 /* SuperViewController.m in Sources */,
+				594715AD1923464500C180B2 /* UIImage+REFrostedViewController.m in Sources */,
 				591C42041921BA6F00189201 /* cakedream.xcdatamodeld in Sources */,
 				591C4253192204EE00189201 /* TestViewController.m in Sources */,
 				591C42331921E71200189201 /* DataStructure.m in Sources */,
+				594715AC1923464500C180B2 /* REFrostedViewController.m in Sources */,
 				591C42481922033A00189201 /* SectionHeaderView.m in Sources */,
 				591C42011921BA6F00189201 /* AppDelegate.m in Sources */,
 				591C4241192202AD00189201 /* SuperTableViewController.m in Sources */,
+				594715AA1923464500C180B2 /* RECommonFunctions.m in Sources */,
 				591C42291921BF3800189201 /* MLNavigationController.m in Sources */,
+				594715AF1923464500C180B2 /* UIViewController+REFrostedViewController.m in Sources */,
+				594715AE1923464500C180B2 /* UIView+REFrostedViewController.m in Sources */,
+				5947159A1923027900C180B2 /* CakeDetailViewController.m in Sources */,
 				591C41FD1921BA6F00189201 /* main.m in Sources */,
 				591C4245192202E600189201 /* MBProgressHUD.m in Sources */,
 				591C42391921F77D00189201 /* OpenUDID.m in Sources */,
 				591C423C1921FC8500189201 /* RSAEncryptAndDecrypt.m in Sources */,
 				591C42361921F17700189201 /* NetWorkRequest.m in Sources */,
+				594715B219234A7D00C180B2 /* DEMOMenuViewController.m in Sources */,
 				591C42251921BE0300189201 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

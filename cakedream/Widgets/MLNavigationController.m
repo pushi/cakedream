@@ -10,6 +10,8 @@
 
 #import "MLNavigationController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIViewController+REFrostedViewController.h"
+#import "DEMOMenuViewController.h"
 
 @interface MLNavigationController ()
 {
@@ -23,6 +25,8 @@
 @property (nonatomic,retain) NSMutableArray *screenShotsList;
 
 @property (nonatomic,assign) BOOL isMoving;
+
+@property (strong, readwrite, nonatomic) DEMOMenuViewController *menuViewController;
 
 @end
 
@@ -67,21 +71,21 @@
     //self.view.layer.shadowOffset = CGSizeMake(5, 5);
     //self.view.layer.shadowRadius = 5;
     //self.view.layer.shadowOpacity = 1;
-    backButton=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 65, 44)];
-    [backButton addTarget:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
-    [backButton setBackgroundImage:[UIImage imageNamed:@"返回未选中"] forState:UIControlStateNormal];
-    [backButton setBackgroundImage:[UIImage imageNamed:@"返回选中"] forState:UIControlStateHighlighted];
-    [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    backButton.titleLabel.font=[UIFont systemFontOfSize:12.0f];
-    [self.navigationBar addSubview:backButton];
-    
-    backLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
-    backLabel.text=@"主页";
-    backLabel.textAlignment=UITextAlignmentRight;
-    backLabel.backgroundColor=[UIColor clearColor];
-    backLabel.textColor=[UIColor whiteColor];
-    backLabel.font=[UIFont boldSystemFontOfSize:14.0f];
-    [self.navigationBar addSubview:backLabel];
+//    backButton=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 65, 44)];
+//    [backButton addTarget:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
+//    [backButton setBackgroundImage:[UIImage imageNamed:@"返回未选中"] forState:UIControlStateNormal];
+//    [backButton setBackgroundImage:[UIImage imageNamed:@"返回选中"] forState:UIControlStateHighlighted];
+//    [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    backButton.titleLabel.font=[UIFont systemFontOfSize:12.0f];
+//    [self.navigationBar addSubview:backButton];
+//    
+//    backLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
+//    backLabel.text=@"主页";
+//    backLabel.textAlignment=UITextAlignmentLeft;
+//    backLabel.backgroundColor=[UIColor clearColor];
+//    backLabel.textColor=[UIColor whiteColor];
+//    backLabel.font=[UIFont boldSystemFontOfSize:14.0f];
+//    [self.navigationBar addSubview:backLabel];
     
     titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(50, 0, 220, 44)];
     titleLabel.textAlignment=UITextAlignmentCenter;
@@ -161,10 +165,19 @@
     
 }
 
+- (void)showMenu
+{
+    [self.frostedViewController presentMenuViewController];
+}
+
 #pragma mark - Gesture Recognizer -
 
 - (void)paningGestureReceive:(UIPanGestureRecognizer *)recoginzer
 {
+    if(self.viewControllers.count<=1)
+    [self.frostedViewController panGestureRecognized:recoginzer];
+
+    
     // If the viewControllers has only one vc or disable the interaction, then return.
     if (self.viewControllers.count <= 1 || !self.canDragBack) return;
     
