@@ -13,6 +13,7 @@
 @property (strong,nonatomic) MBProgressHUD* MBhud;
 @property (strong,nonatomic) NSString* navtitle;
 @property (nonatomic) int type;
+@property (strong,nonatomic)UILabel* backLabel;
 
 -(void)startLoad:(NSString*)hudTitle;
 

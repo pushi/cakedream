@@ -10,7 +10,7 @@
 #import "HomeViewController.h"
 #import "TestViewController.h"
 #import "UIViewController+REFrostedViewController.h"
-
+#import "DIYViewController.h"
 @implementation DEMOMenuViewController
 
 - (void)viewDidLoad
@@ -40,13 +40,13 @@
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
         label.text = @"CakeDream";
-        label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
+        label.font = [UIFont fontWithName:@"RTWS DingDing Demo" size:30];
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
         [label sizeToFit];
         label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         
-        UIImageView*img=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"menubackground.jpg"]];
+        UIImageView*img=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"menubackground"]];
         img.frame=CGRectMake(0, 20, 320, 164);
         [view addSubview:img];
 
@@ -63,8 +63,8 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
    cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
+    cell.textLabel.textColor = [UIColor colorWithRed:0 green:182.0f/255.0f blue:193.0f/255.0f alpha:1];
+    cell.textLabel.font = [UIFont fontWithName:@"RTWS DingDing Demo" size:35];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionIndex
@@ -77,8 +77,8 @@
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 8, 0, 0)];
     label.text = @"系统操作";
-    label.font = [UIFont systemFontOfSize:15];
-    label.textColor = [UIColor blackColor];
+    label.font = [UIFont fontWithName:@"RTWS DingDing Demo" size:30];
+    label.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.9];
     label.backgroundColor = [UIColor clearColor];
     [label sizeToFit];
     [view addSubview:label];
@@ -102,7 +102,12 @@
     if (indexPath.section == 0 && indexPath.row == 0) {
         HomeViewController *homeViewController = [[HomeViewController alloc] init];
         navigationController.viewControllers = @[homeViewController];
-    } else {
+    }else if(indexPath.section==0&&indexPath.row==3)
+    {
+       DIYViewController *cakedetail=[[DIYViewController alloc]init];
+        navigationController.viewControllers=@[cakedetail];
+    }
+    else {
         TestViewController *secondViewController = [[TestViewController alloc] init];
         navigationController.viewControllers = @[secondViewController];
     }
@@ -143,7 +148,7 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"主页", @"积分换礼", @"天天半价", @"私人定制DIY"];
+        NSArray *titles = @[@"主页", @"积分换礼", @"天天折扣", @"私人定制DIY"];
         cell.textLabel.text = titles[indexPath.row];
         if(indexPath.row==1||indexPath.row==3)
         {

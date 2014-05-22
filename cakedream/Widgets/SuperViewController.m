@@ -11,7 +11,7 @@
 #import "HomeViewController.h"
 @interface SuperViewController ()<MBProgressHUDDelegate>{
     UIButton* more;
-    UILabel* backLabel;
+//    UILabel* backLabel;
 }
 
 @end
@@ -20,6 +20,7 @@
 @synthesize MBhud;
 @synthesize navtitle;
 @synthesize type;
+@synthesize backLabel;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

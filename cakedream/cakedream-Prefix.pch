@@ -42,4 +42,4 @@
 #define CURRENT_VERSION         @"string.currentVersion"//当前软件版本
 #define SKIN_THEME              @"SkinTheme"//皮肤主题
 //cell选中背景色
-#define CellChangeSelectedColor cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];cell.selectedBackgroundView.backgroundColor =[UIColor colorWithWhite:0.8f alpha:0.8f]
+#define CellChangeSelectedColor cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];cell.selectedBackgroundView.backgroundColor =[UIColor colorWithRed:1 green:182.0f/255.0f blue:193.0f/255.0f alpha:0.2]

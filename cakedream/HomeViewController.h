@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CakeDetailViewController.h"
 
 @interface HomeViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView*subtableview;
 @property(strong,nonatomic) UILabel* backLabel;
+@property(strong,nonatomic) UILabel* todiylabel;
+@property(strong,nonatomic)CakeDetailViewController*cakedetailview;
 @end

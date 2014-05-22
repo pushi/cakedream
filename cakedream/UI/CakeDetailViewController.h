@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "SuperViewController.h"
 @interface CakeDetailViewController : SuperViewController
-
+@property(strong,nonatomic)UIImageView*cakeimg;
 @end
