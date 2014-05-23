@@ -265,7 +265,7 @@
             break;
     }
     
-    cakeimage.frame = CGRectMake(5, 5, 125, 105);
+    cakeimage.frame = CGRectMake(5, 5, 125, 125);
         
            cakeimage.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
            cakeimage.layer.masksToBounds = YES;

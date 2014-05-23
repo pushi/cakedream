@@ -31,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     scrolltableview=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
-    scrolltableview.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+20+320-(self.view.frame.size.height-320));
+    scrolltableview.contentSize=CGSizeMake(self.view.frame.size.width, 320*2+200);
     scrolltableview.scrollEnabled=YES;
     scrolltableview.delegate=self;
     [self.view addSubview:scrolltableview];
@@ -55,25 +55,36 @@
     UIImageView*flowerbg=[[UIImageView alloc]initWithFrame:CGRectMake(0, 320, 320 , 320)];
     [flowerbg setImage:[UIImage imageNamed:@"flowerbg.jpg"]];
     [scrolltableview addSubview:flowerbg];
+    UIImageView*flowerbg1=[[UIImageView alloc]initWithFrame:CGRectMake(0, 640, 320 , 320)];
+    [flowerbg1 setImage:[UIImage imageNamed:@"flowerbg.jpg"]];
+    [scrolltableview addSubview:flowerbg1];
     
     UIImageView*touming=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"透明背景"]];
-    touming.frame=CGRectMake(0,320, 320, 320);
+    touming.frame=CGRectMake(0,320, 320, 640);
     touming.alpha=1;
     [scrolltableview addSubview:touming];
     
-    UILabel*cakename=[[UILabel alloc]initWithFrame:CGRectMake(10, 20, 200, 60)];
-    cakename.backgroundColor=[UIColor clearColor];
-    cakename.textColor=[UIColor whiteColor];
-    cakename.font=[UIFont fontWithName:@"RTWS DingDing Demo"  size:35];
-    [cakename setText:@"蛋糕详情："];
-    [touming addSubview:cakename];
+    UILabel*cakebook=[[UILabel alloc]initWithFrame:CGRectMake(10, 20, 200, 60)];
+    cakebook.backgroundColor=[UIColor clearColor];
+    cakebook.textColor=[UIColor whiteColor];
+    cakebook.font=[UIFont fontWithName:@"RTWS DingDing Demo"  size:35];
+    [cakebook setText:@"订购信息："];
+    [touming addSubview:cakebook];
     
     UILabel*cakeprice=[[UILabel alloc]initWithFrame:CGRectMake(10, 130, 200, 60)];
     cakeprice.backgroundColor=[UIColor clearColor];
     cakeprice.textColor=[UIColor whiteColor];
     cakeprice.font=[UIFont fontWithName:@"RTWS DingDing Demo"  size:35];
-    [cakeprice setText:@"价格："];
+    [cakeprice setText:@"蛋糕简介："];
     [touming addSubview:cakeprice];
+    
+    UILabel*cakepeisong=[[UILabel alloc]initWithFrame:CGRectMake(10, 200, 250, 60)];
+    cakepeisong.backgroundColor=[UIColor clearColor];
+    cakepeisong.textColor=[UIColor whiteColor];
+    cakepeisong.font=[UIFont fontWithName:@"RTWS DingDing Demo"  size:35];
+    [cakepeisong setText:@"配送范围及收费标准："];
+    [touming addSubview:cakepeisong];
+
 
 
     

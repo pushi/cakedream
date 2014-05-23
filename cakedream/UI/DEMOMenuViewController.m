@@ -11,6 +11,9 @@
 #import "TestViewController.h"
 #import "UIViewController+REFrostedViewController.h"
 #import "DIYViewController.h"
+#import "LaughViewController.h"
+#import "MessageViewController.h"
+#import "CenterViewController.h"
 @implementation DEMOMenuViewController
 
 - (void)viewDidLoad
@@ -107,6 +110,22 @@
        DIYViewController *cakedetail=[[DIYViewController alloc]init];
         navigationController.viewControllers=@[cakedetail];
     }
+    else if(indexPath.section==1&&indexPath.row==0)
+    {
+        CenterViewController *centerview=[[CenterViewController alloc]init];
+        navigationController.viewControllers=@[centerview];
+    }
+    else if(indexPath.section==1&&indexPath.row==2)
+    {
+        LaughViewController *laughview=[[LaughViewController alloc]init];
+        navigationController.viewControllers=@[laughview];
+    }
+    else if(indexPath.section==1&&indexPath.row==1)
+    {
+        MessageViewController *messageview=[[MessageViewController alloc]init];
+        navigationController.viewControllers=@[messageview];
+    }
+
     else {
         TestViewController *secondViewController = [[TestViewController alloc] init];
         navigationController.viewControllers = @[secondViewController];
@@ -132,7 +151,7 @@
 {
     if(sectionIndex==0)
         return 4;
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -148,7 +167,7 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"主页", @"积分换礼", @"天天折扣", @"私人定制DIY"];
+        NSArray *titles = @[@"主页", @"积分换礼", @"天天优惠", @"私人定制DIY"];
         cell.textLabel.text = titles[indexPath.row];
         if(indexPath.row==1||indexPath.row==3)
         {
@@ -156,9 +175,9 @@
         }
 
     } else {
-        NSArray *titles = @[@"设置", @"收藏"];
+        NSArray *titles = @[@"个人中心", @"资讯",@"笑一笑"];
         cell.textLabel.text = titles[indexPath.row];
-        if(indexPath.row==1)
+        if(indexPath.row==0||indexPath.row==2)
         {
             cell.contentView.backgroundColor=[UIColor colorWithRed:1 green:182.0f/255.0f blue:193.0f/255.0f alpha:1];
         }
