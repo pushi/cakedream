@@ -9,9 +9,10 @@
 #import "CenterViewController.h"
 #import "MLNavigationController.h"
 
-@interface CenterViewController ()
+@interface CenterViewController ()<UIScrollViewDelegate>
 {
     UILabel*backLabel;
+    UIScrollView*scrollview;
 
 }
 
@@ -32,6 +33,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     self.view.backgroundColor=[UIColor whiteColor];
     ((MLNavigationController*)self.navigationController).titleLabel.text=@"个人中心";
     {
@@ -49,16 +52,21 @@
         [self.view addSubview:bg];
     }
     {
+    scrollview=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
+    scrollview.contentSize=CGSizeMake(320, 500);
+    [self.view addSubview:scrollview];
+    }
+    {
     UIImageView*touming=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"透明背景"]];
     touming.frame=CGRectMake(10,20, 300, 200);
 //    touming.alpha=1;
-    [self.view addSubview:touming];
+    [scrollview addSubview:touming];
     }
     {
         UIImageView*touming=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"透明背景"]];
         touming.frame=CGRectMake(10,250, 300, 200);
         //    touming.alpha=1;
-        [self.view addSubview:touming];
+        [scrollview addSubview:touming];
     }
 
 }
