@@ -67,9 +67,13 @@
 		59723A46192DCCE3001DDBC2 /* cellbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 59723A45192DCCE3001DDBC2 /* cellbg.png */; };
 		59723A48192DCE45001DDBC2 /* cellbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59723A47192DCE45001DDBC2 /* cellbg@2x.png */; };
 		59723A50192DDA83001DDBC2 /* DingDingziti.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59723A4F192DDA83001DDBC2 /* DingDingziti.otf */; };
+		5973E6B91932EA39000DB4ED /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5973E6B61932EA39000DB4ED /* launch.png */; };
+		5973E6BA1932EA39000DB4ED /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5973E6B71932EA39000DB4ED /* launch@2x.png */; };
+		5973E6BB1932EA39000DB4ED /* launchR4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5973E6B81932EA39000DB4ED /* launchR4@2x.png */; };
 		597C0B21192ED8DD00E8F7E2 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C0B20192ED8DD00E8F7E2 /* MessageViewController.m */; };
 		597C0B25192EE4D300E8F7E2 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C0B24192EE4D300E8F7E2 /* CenterViewController.m */; };
 		597C0B29192EF83F00E8F7E2 /* tableviewbgxuhua.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 597C0B28192EF83F00E8F7E2 /* tableviewbgxuhua.jpg */; };
+		597C0B2B192F0BAC00E8F7E2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 597C0B2A192F0BAC00E8F7E2 /* icon.png */; };
 		5981927C19237B090071DEA2 /* show1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5981927B19237B090071DEA2 /* show1.jpg */; };
 		5987FCCC192DE18700D1CA89 /* cakedetailbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5987FCCA192DE18700D1CA89 /* cakedetailbg.png */; };
 		5987FCCD192DE18700D1CA89 /* cakedetailbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5987FCCB192DE18700D1CA89 /* cakedetailbg@2x.png */; };
@@ -172,11 +176,15 @@
 		59723A45192DCCE3001DDBC2 /* cellbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbg.png; sourceTree = "<group>"; };
 		59723A47192DCE45001DDBC2 /* cellbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellbg@2x.png"; sourceTree = "<group>"; };
 		59723A4F192DDA83001DDBC2 /* DingDingziti.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DingDingziti.otf; sourceTree = "<group>"; };
+		5973E6B61932EA39000DB4ED /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		5973E6B71932EA39000DB4ED /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
+		5973E6B81932EA39000DB4ED /* launchR4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchR4@2x.png"; sourceTree = "<group>"; };
 		597C0B1F192ED8DD00E8F7E2 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		597C0B20192ED8DD00E8F7E2 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		597C0B23192EE4D300E8F7E2 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
 		597C0B24192EE4D300E8F7E2 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		597C0B28192EF83F00E8F7E2 /* tableviewbgxuhua.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tableviewbgxuhua.jpg; sourceTree = "<group>"; };
+		597C0B2A192F0BAC00E8F7E2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5981927B19237B090071DEA2 /* show1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = show1.jpg; sourceTree = "<group>"; };
 		5987FCCA192DE18700D1CA89 /* cakedetailbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cakedetailbg.png; sourceTree = "<group>"; };
 		5987FCCB192DE18700D1CA89 /* cakedetailbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cakedetailbg@2x.png"; sourceTree = "<group>"; };
@@ -325,6 +333,10 @@
 		591C42491922047B00189201 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5973E6B61932EA39000DB4ED /* launch.png */,
+				5973E6B71932EA39000DB4ED /* launch@2x.png */,
+				5973E6B81932EA39000DB4ED /* launchR4@2x.png */,
+				597C0B2A192F0BAC00E8F7E2 /* icon.png */,
 				597C0B28192EF83F00E8F7E2 /* tableviewbgxuhua.jpg */,
 				5987FCCE192DF2A500D1CA89 /* flowerbg.jpg */,
 				5987FCCA192DE18700D1CA89 /* cakedetailbg.png */,
@@ -496,6 +508,7 @@
 				5987FCCD192DE18700D1CA89 /* cakedetailbg@2x.png in Resources */,
 				5987FCCF192DF2A500D1CA89 /* flowerbg.jpg in Resources */,
 				59723A3D192D8863001DDBC2 /* 透明背景.png in Resources */,
+				597C0B2B192F0BAC00E8F7E2 /* icon.png in Resources */,
 				59723A31192D828D001DDBC2 /* 恶魔的帽子.jpg in Resources */,
 				59723A37192D828D001DDBC2 /* 起司蛋糕.jpg in Resources */,
 				597C0B29192EF83F00E8F7E2 /* tableviewbgxuhua.jpg in Resources */,
@@ -511,11 +524,14 @@
 				59723A38192D828D001DDBC2 /* 起思金砖.jpg in Resources */,
 				59723A3E192D8863001DDBC2 /* 透明背景@2x.png in Resources */,
 				591C42061921BA6F00189201 /* Images.xcassets in Resources */,
+				5973E6B91932EA39000DB4ED /* launch.png in Resources */,
 				59723A32192D828D001DDBC2 /* 手工鲜奶油布丁.jpg in Resources */,
+				5973E6BA1932EA39000DB4ED /* launch@2x.png in Resources */,
 				592CB0B419245E3C00671D72 /* menubackground.png in Resources */,
 				5987FCCC192DE18700D1CA89 /* cakedetailbg.png in Resources */,
 				591C424F1922047B00189201 /* 标题@2x.png in Resources */,
 				59723A2E192D828D001DDBC2 /* 卡仕达起司.jpg in Resources */,
+				5973E6BB1932EA39000DB4ED /* launchR4@2x.png in Resources */,
 				59723A3A192D871F001DDBC2 /* bg.jpg in Resources */,
 				59723A30192D828D001DDBC2 /* 巧酥饼干.jpg in Resources */,
 			);
